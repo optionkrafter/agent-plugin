@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64" role="img" aria-label="OptionKrafter">
+  <!-- Marketplace icon variant of the OptionKrafter credit-spread elbow mark (design §108.5):
+       square, opaque background, heavier stroke than the in-app monoline mark, no wordmark. -->
+  <rect width="64" height="64" rx="12" fill="#131820"/>
+  <line x1="14" y1="46" x2="50" y2="46" stroke="#34d399" stroke-width="2.6" opacity="0.45" stroke-dasharray="2.5 3"/>
+  <polyline points="14,44 28,44 40,20 50,20" fill="none" stroke="#34d399" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="34.2" cy="34" r="3.4" fill="#131820" stroke="#34d399" stroke-width="3"/>
+</svg>

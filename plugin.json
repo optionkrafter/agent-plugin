@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "optionkrafter",
+  "version": "1.0.0",
+  "description": "Backtest 13 options strategies including the wheel, on All US tickers, minute by minute since April 2023.",
+  "author": {
+    "name": "OptionKrafter (SynapseSkytech LLC)",
+    "email": "support@optionkrafter.com",
+    "url": "https://optionkrafter.com"
+  },
+  "homepage": "https://optionkrafter.com/learn/connect",
+  "repository": "https://github.com/adityagawale/optionkrafter-agent-plugin",
+  "license": "MIT",
+  "keywords": ["options", "backtesting", "finance", "trading-research", "mcp", "wheel-strategy"]
+}
