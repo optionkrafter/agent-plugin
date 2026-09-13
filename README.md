@@ -20,11 +20,18 @@ There is no code in this repository beyond the manifest and this README — the 
 
 ## Install
 
-- **Cursor / Grok Bot:** install from the Marketplace, or use the one-click link on <https://optionkrafter.com/learn/connect>. On first use the client opens optionkrafter.com to sign in (Google) and shows a consent screen; approve, and the tools become available.
+- **Grok Build / Grok Bot:** install from the xAI plugin marketplace (or Settings → Add MCP Server with the URL above). On first use it opens optionkrafter.com to sign in (Google) and shows a consent screen; approve, and the tools become available.
+- **Cursor:** install from the Cursor Marketplace, or use the one-click link on <https://optionkrafter.com/learn/connect>.
 - **Any Agent-Plugins-compatible client** (ChatGPT, Codex, GitHub Copilot, VS Code, Kiro): add this plugin; it declares the remote server in `mcp.json`.
 - **Claude:** Settings → Connectors → Add custom connector, paste the URL above.
 
 Authentication is standard OAuth 2.0 with dynamic client registration — your client registers itself, you sign in on optionkrafter.com, and no API key or secret is ever configured in the plugin.
+
+## Network endpoints and credentials (for reviewers)
+
+- **Network:** the plugin configures exactly one remote MCP server, `https://mcp.optionkrafter.com/mcp`. OAuth sign-in and consent happen in your browser on `https://optionkrafter.com` (the authorization server: `/as/*`, discovery at `/.well-known/oauth-authorization-server`). No other endpoints are contacted, and nothing runs locally.
+- **Credentials:** none are configured in this package. Authentication is OAuth 2.0 with PKCE and dynamic client registration, handled by your client; the token it holds is scoped to `mcp:read` (required) and, if you allow it on the consent screen, `mcp:run` (start backtests). Tokens can be revoked at any time in Settings → Connected apps.
+- **Data:** tool calls send only their declared parameters (ticker, structure, dates, strike settings, run id). The server never reads local files, environment variables, or chat history.
 
 ## Tools
 

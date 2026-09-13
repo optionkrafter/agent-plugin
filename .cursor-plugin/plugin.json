@@ -9,7 +9,14 @@
   "homepage": "https://optionkrafter.com/learn/connect",
   "repository": "https://github.com/optionkrafter/agent-plugin",
   "license": "MIT",
-  "keywords": ["options", "backtesting", "finance", "trading-research", "mcp", "wheel-strategy"],
-  "logo": "logo.svg",
+  "keywords": [
+    "options",
+    "backtesting",
+    "finance",
+    "trading-research",
+    "mcp",
+    "wheel-strategy"
+  ],
+  "logo": "assets/logo.svg",
   "mcpServers": "mcp.json"
 }
