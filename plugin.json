@@ -9,7 +9,7 @@
     "url": "https://optionkrafter.com"
   },
   "homepage": "https://optionkrafter.com/learn/connect",
-  "repository": "https://github.com/adityagawale/optionkrafter-agent-plugin",
+  "repository": "https://github.com/optionkrafter/agent-plugin",
   "license": "MIT",
   "keywords": ["options", "backtesting", "finance", "trading-research", "mcp", "wheel-strategy"]
 }
