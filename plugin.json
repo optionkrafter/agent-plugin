@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "optionkrafter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Backtest 13 options strategies including the wheel, on All US tickers, minute by minute since April 2023.",
   "author": {
     "name": "OptionKrafter (SynapseSkytech LLC)",
