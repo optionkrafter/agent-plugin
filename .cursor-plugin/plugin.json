@@ -1,12 +1,12 @@
 {
   "name": "optionkrafter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Backtest 13 options strategies including the wheel, on All US tickers, minute by minute since April 2023.",
   "author": {
     "name": "OptionKrafter (SynapseSkytech LLC)",
     "email": "support@optionkrafter.com"
   },
-  "homepage": "https://optionkrafter.com/learn/connect",
+  "homepage": "https://optionkrafter.com/learn/connect?utm_source=cursor&utm_campaign=mcp-listing-cursor",
   "repository": "https://github.com/optionkrafter/agent-plugin",
   "license": "MIT",
   "keywords": [
