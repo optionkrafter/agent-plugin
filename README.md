@@ -4,7 +4,7 @@ Ask your assistant to test an options strategy and read back what it did. Option
 
 Every run reports a realistic result with modeled fills and commissions, alongside the same trades at pure mid as a reference figure. Results are hypothetical outcomes on historical data, not a record of trading, and nothing here is advice.
 
-Sign-in happens on optionkrafter.com, so the assistant never sees your password, and you can revoke access at any time in Settings → Connected apps. It can read your strategies and runs and start a backtest when you allow it; it can never place a real trade, see a payment method, change your plan, or delete anything. Krafter Bots trade on paper only.
+Sign-in happens on optionkrafter.com, so the assistant never sees your password, and you can revoke access at any time in the Agent Hub. It can read your strategies and runs and start a backtest when you allow it; it can never place a real trade, see a payment method, change your plan, or delete anything. Krafter Bots trade on paper only.
 
 Free plan · All US tickers · no credit card required.
 
@@ -21,7 +21,7 @@ There is no code in this repository beyond the manifest and this README — the 
 ## Install
 
 - **Grok Build / Grok Bot:** install from the xAI plugin marketplace (or Settings → Add MCP Server with the URL above). On first use it opens optionkrafter.com to sign in (Google) and shows a consent screen; approve, and the tools become available.
-- **Cursor:** install from the Cursor Marketplace, or use the one-click link on <https://optionkrafter.com/learn/connect>.
+- **Cursor:** install from the Cursor Marketplace, or use the one-click link on <https://optionkrafter.com/learn/connect?utm_source=github&utm_campaign=agent-plugin-readme>.
 - **Any Agent-Plugins-compatible client** (ChatGPT, Codex, GitHub Copilot, VS Code, Kiro): add this plugin; it declares the remote server in `mcp.json`.
 - **Claude:** Settings → Connectors → Add custom connector, paste the URL above.
 
@@ -30,7 +30,7 @@ Authentication is standard OAuth 2.0 with dynamic client registration — your c
 ## Network endpoints and credentials (for reviewers)
 
 - **Network:** the plugin configures exactly one remote MCP server, `https://mcp.optionkrafter.com/mcp`. OAuth sign-in and consent happen in your browser on `https://optionkrafter.com` (the authorization server: `/as/*`, discovery at `/.well-known/oauth-authorization-server`). No other endpoints are contacted, and nothing runs locally.
-- **Credentials:** none are configured in this package. Authentication is OAuth 2.0 with PKCE and dynamic client registration, handled by your client; the token it holds is scoped to `mcp:read` (required) and, if you allow it on the consent screen, `mcp:run` (start backtests). Tokens can be revoked at any time in Settings → Connected apps.
+- **Credentials:** none are configured in this package. Authentication is OAuth 2.0 with PKCE and dynamic client registration, handled by your client; the token it holds is scoped to `mcp:read` (required) and, if you allow it on the consent screen, `mcp:run` (start backtests). Tokens can be revoked at any time in the Agent Hub on optionkrafter.com.
 - **Data:** tool calls send only their declared parameters (ticker, structure, dates, strike settings, run id). The server never reads local files, environment variables, or chat history.
 
 ## Tools
@@ -49,12 +49,12 @@ A backtest started by an assistant counts against the same monthly allowance as 
 
 ## Disconnecting
 
-Settings → Connected apps → Revoke on optionkrafter.com. Access stops immediately; strategies and runs the assistant created stay in your account.
+Open the Agent Hub on optionkrafter.com and choose Revoke. Access stops immediately; strategies and runs the assistant created stay in your account.
 
 ## Documentation and support
 
-- How connecting works: <https://optionkrafter.com/learn/connect>
-- How fills are modeled: <https://optionkrafter.com/learn/methodology>
+- How connecting works: <https://optionkrafter.com/learn/connect?utm_source=github&utm_campaign=agent-plugin-readme>
+- How fills are modeled: <https://optionkrafter.com/learn/methodology?utm_source=github&utm_campaign=agent-plugin-readme>
 - Privacy policy: <https://optionkrafter.com/privacy> · Terms: <https://optionkrafter.com/terms>
 - Support: support@optionkrafter.com
 
